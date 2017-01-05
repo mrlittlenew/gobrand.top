@@ -1,0 +1,476 @@
+@charset "utf-8";
+/* CSS Document */
+video::-webkit-media-controls {
+  display:none !important;
+  z-index: 2147483647;
+}
+video::-webkit-media-controls-enclosure {
+  display:none !important;
+  z-index: 2147483647;
+}
+/* Could Use thise as well for Individual Controls */
+video::-webkit-media-controls-play-button {}
+
+video::-webkit-media-controls-volume-slider {}
+
+video::-webkit-media-controls-mute-button {}
+
+video::-webkit-media-controls-timeline {}
+
+video::-webkit-media-controls-current-time-display {}
+
+html,
+body {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+	font-family: Arial, "微软雅黑";
+	font-size: 12px;
+	line-height: 22px;
+	color: #414141;
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+a,
+img {
+	color: #414141;
+	border: 0;
+	outline: none;
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+br {
+	height: 0;
+	width: 0;
+	line-height: 0;
+}
+#page {
+	background-color:#FFFFFF;
+	max-width:640px;
+	width: 100%;
+	height: 11rem;
+	overflow: hidden;
+}
+#page #loading {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 101%;
+	height: 101%;
+	background-color: #FFFFFF;
+	background-image:url(../images/bg-loading-done.jpg);
+	background-position: top center;
+	background-size:100% auto;
+	background-repeat: no-repeat;
+	z-index: 99;
+}
+#page #loading .process{
+	position: absolute;
+	top:6.6rem;
+	width:100%;
+	height:2rem;
+	text-align: center;
+	/*background-image:url(../images/process.gif);
+	background-position: top center;
+	background-size:100% auto;
+	background-repeat: no-repeat;*/
+}
+#page #loading .process img{
+	width:60%;
+	margin:auto;
+}
+#page #loading .val {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -0.7rem 0 0 -0.7rem;
+	text-align: center;
+	color: #fff;
+	height: 1.4rem;
+	width: 1.4rem;
+	font-size: 16px;
+	border-radius:50%;
+	line-height: 1.4rem;
+	background:#54412b;
+	border:none;
+}
+
+#page-all{
+	width:100%;
+	height:11.36rem;
+	overflow: hidden;
+	/*background-image:url(http://7xozxc.com1.z0.glb.clouddn.com/koala2016-buyer/images/transparent.gif);*/
+	background-position: top center;
+	background-size:100% auto;
+	-webkit-transition:background 0.6s;
+	transition:background 0.6s;
+	/*-webkit-transition-delay:1s;
+	transition-delay:1s;*/
+}
+#p1{
+	width:100%;
+	height:11.36rem;
+	overflow: hidden;
+	position: relative;
+}
+#bt-enter{
+	position: absolute;
+	top: 5.5rem;
+	left: 50%;
+	margin: -1.21rem 0 0 -1.21rem;
+	text-align: center;
+	color: #fff;
+	height: 0.92rem;
+	width: 2.42rem;
+	font-size: 16px;
+	line-height: 1.4rem;
+	background:url(http://7xozxc.com1.z0.glb.clouddn.com/miui-0816/images/bt-enter.png) no-repeat center center;
+	background-size:100% auto;
+	display:block;
+	z-index: 2;
+	opacity: 0;
+	-webkit-transition:all 0.6s;
+	transition:all 0.6s;
+}
+#bg-erwei{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	background-image:url(../images/erwei.jpg);
+	background-position: top center;
+	background-size:100% auto;
+	background-repeat: no-repeat;
+	z-index: 99;
+	display:none;
+
+}
+#bt-voice-none{
+	position: absolute;
+	top: 1.5rem;
+	left: 90%;
+	margin: -1.21rem 0 0 -1.21rem;
+	text-align: center;
+	color: #fff;
+    height: 0.92rem;
+    width: 0.92rem;
+	font-size: 16px;
+	line-height: 1.4rem;
+	background:url(../images/speaker20.png) no-repeat center center;
+	background-size:100% auto;
+	display:none;
+	z-index: 2;
+	opacity: 0;
+	-webkit-transition:all 0.6s;
+	transition:all 0.6s;
+}
+
+#bt-voice-none.stay{
+	opacity: 1;
+	
+}
+
+#bt-voice{
+	position: absolute;
+	top: 1.5rem;
+	left: 90%;
+	margin: -1.21rem 0 0 -1.21rem;
+	text-align: center;
+	color: #fff;
+    height: 0.92rem;
+    width: 0.92rem;
+	font-size: 16px;
+	line-height: 1.4rem;
+	background:url(../images/speaker21.png) no-repeat center center;
+	background-size:100% auto;
+	display:block;
+	z-index: 2;
+	opacity: 0;
+	-webkit-transition:all 0.6s;
+	transition:all 0.6s;
+}
+
+#bt-voice.stay{
+	opacity: 1;
+	
+}
+#bt-enter.stay{
+	opacity: 1;
+	top: 6.2rem;
+	
+}
+#bt-enter.stay.gone{
+	opacity: 0;
+	top: 6.4rem;
+	-webkit-transition:all 0.2s;
+	transition:all 0.2s;
+}
+
+#bt-award{
+	position: absolute;
+	bottom: 0;
+	right: 1.9rem;
+	
+	text-align: center;
+	color: #fff;
+	height: 1.92rem;
+	width: 2.42rem;
+	font-size: 16px;
+	line-height: 1.4rem;
+	background:url(../images/bt-award.png) no-repeat center center;
+	background-size:100% auto;
+	display:block;
+	z-index: 90;
+	opacity: 0;
+	-webkit-transition:all 0.6s;
+	transition:all 0.6s;
+}
+#bt-award.stay{
+	opacity: 1;
+	bottom: 1rem;
+	
+}
+#bt-share{
+	position: absolute;
+	bottom: 0;
+	left: 0.5rem;
+	
+	text-align: center;
+	color: #fff;
+	height: 0.92rem;
+	width: 2.42rem;
+	font-size: 16px;
+	line-height: 1.4rem;
+	background:url(http://7xozxc.com1.z0.glb.clouddn.com/miui-0816/images/bt-share.png) no-repeat center center;
+	background-size:100% auto;
+	display:block;
+	z-index: 90;
+	opacity: 0;
+	-webkit-transition:all 0.6s;
+	transition:all 0.6s;
+}
+#bt-share.stay{
+	opacity: 1;
+	bottom: 1rem;
+	
+}
+#award-txt{
+	position: absolute;
+	top: 0;
+	left: 1.2rem;
+	text-align: center;
+	color: #fff;
+	height: 0.6rem;
+	width: 4.0rem;
+	font-size: 16px;
+	line-height: 1.4rem;
+	background: url(http://7xozxc.com1.z0.glb.clouddn.com/miui-0816/images/award-txt.png) no-repeat center center;
+	background-size: 100% auto;
+	display: block;
+	z-index: 90;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+#award-txt.stay{
+	opacity: 1;
+	top: 1rem;
+}
+
+#loadingLayer{
+	width: 100%;
+	height: 100%;
+	background: no-repeat rgba(0,0,0,0.9) center center;
+	background-size:50px 50px;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 0;
+	opacity: 0;
+	-webkit-transition:-webkit-opacity 0.5s;
+	transition:opacity 0.5s;
+}
+#loadingLayer.stay{
+	z-index: 99;
+	opacity: 1;
+}
+
+
+#bg-end{
+	width: 100%;
+	height: 100%;
+	background:url(../images/erwei.jpg) no-repeat;
+	background-size:100% auto;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 1;
+	display: none;
+}
+#bg-smart{
+	width: 100%;
+	height: 100%;
+	background:url(../images/smart.png) no-repeat;
+	background-size:100% auto;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 1;
+	display: none;
+}
+
+#shareLayer{
+	width: 100%;
+	height: 100%;
+	background:url(http://7xozxc.com1.z0.glb.clouddn.com/miui-0816/images/shareLayer.png) no-repeat rgba(0,0,0,0.9);
+	background-size:100% auto;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 100;
+	display: none;
+}
+
+canvas{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	display: none;
+}
+/*-------------added animations-------*/
+@-webkit-keyframes swingBottomRight {/*对话框文字摆动*/
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, 2deg);
+    transform: rotate3d(0, 0, 1, 2deg);
+  }
+  75% {
+    -webkit-transform: rotate3d(0, 0, 1, -2deg);
+    transform: rotate3d(0, 0, 1, -2deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+@keyframes swingBottomRight {
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, 2deg);
+    transform: rotate3d(0, 0, 1, 2deg);
+  }
+  75% {
+    -webkit-transform: rotate3d(0, 0, 1, -2deg);
+    transform: rotate3d(0, 0, 1, -2deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+.swingBottomRight {
+  -webkit-transform-origin: bottom right;
+  transform-origin:bottom right;
+  -webkit-animation-name: swingBottomRight;
+  animation-name: swingBottomRight;
+}
+@-webkit-keyframes swingBottomLeft {/*旗帜摆动*/
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, -2deg);
+    transform: rotate3d(0, 0, 1, -2deg);
+  }
+  75% {
+    -webkit-transform: rotate3d(0, 0, 1, 2deg);
+    transform: rotate3d(0, 0, 1, 2deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+@keyframes swingBottomLeft {
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, -2deg);
+    transform: rotate3d(0, 0, 1, -2deg);
+  }
+  75% {
+    -webkit-transform: rotate3d(0, 0, 1, 2deg);
+    transform: rotate3d(0, 0, 1, 2deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+.swingBottomLeft {
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-animation-name: swingBottomLeft;
+  animation-name: swingBottomLeft;
+}
+
+@-webkit-keyframes swingLeftRight {/*箭头左右摆动*/
+  from, 50%, to {
+    margin-left: 0.1rem;
+  }
+  25%, 75% {
+    margin-left: 0;
+  }
+}
+@keyframes swingLeftRight {
+  from, 50%, to {
+    margin-left: 0.1rem;
+  }
+  25%, 75% {
+    margin-left: 0;
+  }
+}
+.swingLeftRight {
+  -webkit-animation-name: swingLeftRight;
+  animation-name: swingLeftRight;
+}
+
+@-webkit-keyframes lighting1 {/**/
+  from, 50%, to {
+  	opacity: 1;
+    top: -0.2rem;
+    left: 0.8rem;
+  }
+  25%, 75% {
+  	opacity: 0;
+    top: -0.1rem;
+    left: 0.7rem;
+  }
+}
+
+
+
+@-webkit-keyframes musicIcon {/*music icon*/
+	0%, 100% {
+		-webkit-transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(20deg);
+	}
+}
+@keyframes musicIcon {
+	0%, 100% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(20deg);
+	}
+}
+
+

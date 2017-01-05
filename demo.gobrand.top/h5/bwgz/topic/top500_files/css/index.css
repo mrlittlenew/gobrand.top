@@ -1,0 +1,426 @@
+body {
+    margin: 0;
+    background-color: rgb(11,13,62);
+}
+.wrapper {
+    position: relative;
+    width: 1349px;
+    margin: auto;
+    overflow: hidden;
+}
+img {
+    width: auto;
+}
+.wrapper div {
+    position: relative;
+    z-index: 100;
+ }
+/* 背景图 */
+.background {
+    position: absolute;
+    width: 1349px;
+    left: 0;
+    top: 350px;
+}
+/* ------------------------------top--------------------------------- */
+.top .title {
+    margin-left: 203px;
+    margin-top: 125px;
+    width: 948px;
+    height: 440px;
+    background-image: url("../img/title.png");
+}
+/* 操作步骤 */
+.par-step {
+    margin-left: 203px;
+    padding-top: 75px;
+    padding-left: 40px;
+}
+.par-step .steps {
+    float: left;
+    width: 600px;
+}
+.steps .div-step {
+    width: 205px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    float: left;
+}
+.div-step img {
+    width: 205px;
+    margin-bottom: 15px;
+}
+.step-third {
+    margin-left: 130px;
+    margin-top: 4px;
+}
+.img-code {
+    margin-top: -25px;
+    margin-left: -130px;
+}
+.par-intro {
+    margin-top: 50px;
+}
+.par-intro p {
+    font-size: 30px;
+    font-family: "微软雅黑";
+    color: white;
+    padding-left: 203px;
+    width: 650px;
+    line-height: 20px;
+}
+/* -------------------------------middle------------------------------- */
+.middle {
+    padding-top: 10px;
+    padding-left: 193px;
+}
+.little-margin {
+    margin-left: 10px;
+}
+.tab-change {
+    width: 952px;
+    height: 200px;
+    margin-top: 50px;
+}
+.tab-item {
+    width: 190px;
+    float: left;
+    cursor: pointer;
+}
+.tab-item .icon {
+    margin-left: 40px;
+    border-radius: 50%;
+    width: 94px;
+    margin-bottom: 10px;
+}
+.tab-item .text {
+    position: relative;
+    margin-left: 9px;
+    margin-bottom: 5px;
+    z-index: 200;
+    width: 165px;
+}
+.tab-button {
+    height: 30px;
+    border-top: solid 3px rgb(214,213,25);
+    background-color: rgb(129,129,129);
+}
+.decoration {
+    position: absolute!important;
+    width: 30px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(11,13,62);
+    margin-top: -70px;
+    margin-left: -15px;
+    z-index: 150!important;
+}
+.tab-item:hover .icon,
+.tab-item:hover .tab-button {
+    box-shadow: 0 0 10px white;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+}
+/* content */
+.middle .content {
+    width: 960px;
+    background-color: white;
+    margin-left: -4px;
+    margin-top: -35px;
+    border-radius: 20px;
+    margin-bottom: 200px;
+    box-shadow: 0 -2px 5px rgb(55,55,55);
+}
+.middle .content .content-item {
+    width: 478px;
+    height: 443px;
+    border-radius: 20px;
+    border: solid 1px #eeeeee;
+}
+.right-no-radius {
+    border-top-right-radius: 0!important;
+}
+.left-no-radius {
+    border-top-left-radius: 0!important;
+}
+.container {
+    width: 970px;
+    overflow: hidden;
+}
+.container .content-item {
+    float: left;
+    padding-top: 35px;
+    color: #999999;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "微软雅黑";
+}
+.little-up {
+    margin-top: -9px;
+}
+.bg-yellow {
+    background-color: rgb(238,198,64);
+}
+.content-item .logo {
+    border-radius: 20px;
+    width: 110px;
+    float: left;
+}
+.com-info {
+    width: 350px;
+    overflow: hidden;
+    padding-left: 10px;
+}
+.com-info div {
+    float: left;
+}
+.com-info p {
+    font-size: 11px;
+    line-height: 11px;
+    float: right;
+    padding-right: 5px;
+}
+.content-item .divider {
+    height: 1px;
+    width: 340px;
+    background-color: #666666;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content-item .com-title,
+.content-item .com-intro,
+.content-item .com-href {
+    float: left;
+}
+.com-title {
+    display: block;
+    width: 340px;
+    font-size: 20px!important;
+    color: #333333!important;
+}
+.com-intro {
+    width: 330px;
+    height: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.com-href {
+    padding-top: 100px;
+    width: 220px;
+    height: 100px;
+}
+.com-href div {
+    width: 220px;
+    overflow: hidden;
+}
+.com-ma {
+    width: 110px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+.select-button {
+    background-color: white;
+}
+/* --------------------------------bottom---------------------------------- */
+.bottom {
+    padding-left: 203px;
+    padding-bottom: 200px;
+}
+.bottom .title {
+    position: relative;
+}
+.bottom div {
+    margin-bottom: 10px;
+}
+/* ------------------------------footer----------------------------------- */
+.footer {
+    width: 943px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    margin-left: 203px;
+    border-top: solid 1px #dddddd;
+    text-align: center;
+    color: #999999;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.footer a {
+    text-decoration: none;
+    color: #999999;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.img-click {
+    display: none;
+}
+.mobile-content {
+    display: none;
+}
+.bottom .sup-com {
+    width: 98px;
+}
+/* ----------------------------手机端------------------------------ */
+@media (max-width: 720px) {
+    .wrapper {
+        width: 703px;
+    }
+    .top .title {
+        width: 660px;
+        height: 420px;
+        background-image: url("../img/title-mobile.png");
+        margin-left: 20px;
+        margin-top: 90px;
+    }
+    .par-step {
+        margin-left: 0;
+        padding-left: 50px;
+        overflow: hidden;
+    }
+    .step-third {
+        margin-left: 0;
+    }
+    .steps {
+        width: 640px!important;
+    }
+    .div-step {
+        margin-bottom: 5px!important;
+    }
+    .div-step,
+    .div-step img{
+        width: 300px!important;
+        margin-bottom: 50px;
+    }
+    .img-code {
+        display: none;
+    }
+    .par-intro p{
+        padding-left: 50px;
+    }
+    .middle {
+        padding-top: 170px;
+        padding-left: 0;
+        width: 720px;
+    }
+    .decoration {
+        display: none;
+    }
+    .tab-change {
+        height: auto;
+        overflow: hidden;
+        padding-left: 20px;
+    }
+    .tab-item {
+        width: 310px;
+        margin-right: 35px;
+        margin-bottom: 50px;
+        padding-top: 10px;
+        border-bottom: solid 5px rgb(214,213,25);
+    }
+    .tab-button {
+        display: none;
+    }
+    .tab-item .icon {
+        width: 145px;
+        margin-left: 80px!important;
+    }
+    .tab-item .text {
+        width: 300px;
+    }
+    .middle .content .container{
+        display: none!important;
+    }
+    .middle .content {
+        width: 693px;
+        margin-left: 5px;
+        min-height: 270px;
+        padding-bottom: 15px;
+        margin-top: 0;
+        margin-bottom: 85px;
+    }
+    .bottom {
+        width: 693px!important;
+        padding-left: 5px!important;
+        padding-bottom: 100px;
+    }
+    .huodongzhuban {
+        padding-left: 30px;
+    }
+    .huodongzhuban .title {
+        margin-left: 270px;
+        margin-right: 300px;
+        margin-bottom: 30px;
+    }
+    .lianhezhuban {
+        padding-left: 150px;
+    }
+    .lianhezhuban .title {
+        margin-left: 150px;
+        margin-right: 300px;
+        margin-bottom: 30px;
+    }
+    .huodongzhichi {
+        padding-left: 25px;
+    }
+    .huodongzhichi .title {
+        margin-left: 275px;
+        margin-right: 300px;
+        margin-bottom: 30px;
+    }
+    .huodongzhuban .sup-com,
+    .lianhezhuban .sup-com {
+        width: 200px!important;
+        margin-bottom: 20px;
+    }
+    .huodongzhichi .sup-com {
+        width: 150px;
+    }
+    .footer {
+        width: 693px;
+        margin-left: 5px;
+    }
+    .mobile-content {
+        padding: 5px 25px;
+        font-family: "微软雅黑";
+        color: #aaaaaa;
+        display: block;
+    }
+    .mobile-content h3 {
+        font-size: 20px;
+    }
+    .mobile-content img {
+        float: left;
+        width: 180px;
+    }
+    .mobile-content p {
+        width: 440px;
+        margin-left: 200px;
+        padding-top: 20px;
+    }
+    .mobile-content p span {
+        display: block;
+    }
+    .mobile-content p a {
+        cursor: pointer;
+        text-decoration: underline;
+        float: right;
+    }
+    .mobile-content p span:first-child {
+        margin-top: 20px;
+    }
+    .mobile-content .com-site,
+    .mobile-content .com-employ {
+        padding-left: 200px;
+    }
+    .mobile-divider {
+        width: 650px;
+        height: 1px;
+        background-color: #dddddd;
+        margin-bottom: 15px;
+    }
+    .background {
+        width: 720px!important;
+    }
+}

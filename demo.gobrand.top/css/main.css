@@ -1,0 +1,96 @@
+/*--------------------------*/
+/*demo.gobrand.top*/
+/*--------------------------*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.clear{
+	clear:both;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+#hiddenEle{
+	display:none;
+}
+
+.item{
+  position:relative;
+  width: 50%;
+  height: 0;
+  background-size:cover; 
+  float:left;
+}
+
+.item p{
+  position:absolute;
+  opacity: 0.6;
+  width: 100%;
+  bottom:0;
+  background-color:#000;
+  width: 100%;
+  font-size:3rem;
+  color:#fff;
+}
+
+#rollbar{
+	position:fixed;
+	width: 100%;
+	height: 5rem;
+	bottom:0;
+	background-color:#1a191e;
+}
+
+
+#searchbar{
+	margin:0.5rem;
+}
+
+#searchbar input{
+	font-size:3rem;
+	width: 98%;
+	border-radius:10px;
+}
+
+#searchbarL{
+	margin-right:15rem;
+	font-size:3rem;
+}
+#searchbarR{
+	float:right;
+	width: 15rem;
+}
+
+#searchInfo{
+	height: 100%;
+}
+#searchBtn{
+	height: 4rem;
+}
+
+@media screen and (min-width: 1000px){
+	.item{
+	  width: 25%;
+	}
+	
+	.item p{
+	  font-size:1.5rem;
+	}
+}
+
+@media screen and (orientation:landscape){
+	.item{
+	  width: 25%;
+	}
+	
+	.item p{
+	  font-size:1.5rem;
+	}
+}
+
+
