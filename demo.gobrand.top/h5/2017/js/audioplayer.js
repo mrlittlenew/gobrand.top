@@ -115,6 +115,7 @@
 				theAudio.addEventListener( 'loadeddata', function()
 				{
 					timeDuration.text( secondsToTime( theAudio.duration ) );
+					timeDuration.text('00:29');
 					volumeAdjuster.find( 'div' ).height( theAudio.volume * 100 + '%' );
 					volumeDefault = theAudio.volume;
 				});

@@ -25,11 +25,17 @@
 	<body>
 
 		<div id="wrapper">
-			<audio id="audio" src="2017.aac" controls="controls" autoplay="autoplay"></audio>
+			<audio id="audio" src="2017.aac" controls="controls"></audio>
 			<script src="js/jquery.js"></script>
-			<script src="js/audioplayer.js"></script>
-			<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+			<script src="js/audioplayer.js?v5"></script>
+			<script>
+				$( function() {
+					$( 'audio' ).audioPlayer(); 
+					document.addEventListener("WeixinJSBridgeReady", function () {
+						$('.audioplayer-playpause').click();
+					}, false);
+				} );
+			</script>
 		</div>
-
 	</body>
 </html>
