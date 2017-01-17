@@ -23,7 +23,7 @@ body {
   position:relative;
   width: 50%;
   height: 0;
-  background-size:cover; 
+  background-size:contain; 
   float:left;
 }
 

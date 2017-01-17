@@ -1,6 +1,11 @@
 var searchInfo='中兴通讯2017精英盛典盛大开启';
 var itemInfoData=[
 	{
+		logoImg:"logo.png",
+		url:"http://demo.gobrand.top/h5/2017/",
+		name:"2017gobrand新年贺卡录音 201701"
+	},
+	{
 		logoImg:"ztebj.jpg",
 		url:"http://demo.gobrand.top/h5/ztebj/",
 		name:"中兴通讯2017精英盛典盛大开启 201607"
